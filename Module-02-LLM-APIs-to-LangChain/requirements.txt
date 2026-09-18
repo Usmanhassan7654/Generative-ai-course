@@ -3,12 +3,15 @@ python-dotenv
 
 # Official provider SDKs
 google-genai
-groq
+groq>=0.31.0
+httpx>=0.28.1
 
 # LangChain
 langchain
 langchain-core
 langchain-groq
+langchain-google-genai
+google-genai
 langchain-google-genai
 
 # VS Code / Jupyter notebook kernel
