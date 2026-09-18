@@ -1,0 +1,15 @@
+# Core environment helper
+python-dotenv
+
+# Official provider SDKs
+google-genai
+groq
+
+# LangChain
+langchain
+langchain-core
+langchain-groq
+langchain-google-genai
+
+# VS Code / Jupyter notebook kernel
+ipykernel
