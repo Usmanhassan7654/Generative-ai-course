@@ -1,4 +1,4 @@
-# 🤖 AskBuddy – Beginner LangChain + Gemini Project
+# AskOwngpt – Beginner LangChain + Gemini Project
 
 This project contains **two very simple VS Code versions** of the same AI chatbot.
 
