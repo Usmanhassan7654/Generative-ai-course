@@ -1,0 +1,9 @@
+Check,Expected,Observed sources,Actual result,Pass/fail
+Cash on arrival,P02 intended relevant policy,,,
+Missed rider,P04 intended among useful candidates,,,
+Pickup hours,P07 intended relevant policy,,,
+k=1 then k=3,At most k returned candidates,,,
+Reopen without save,Saved records retrievable,,,
+Refund period,No supported refund period; no invented answer,,,
+LLM missed rider + support hours,LLM requests search and addresses both parts with P04/P08 evidence,,,
+LLM refund period,"No invented refund period, honest missing-policy response",,,

@@ -1,0 +1,6 @@
+langchain-chroma==1.1.0
+langchain-google-genai==4.4.2
+chromadb==1.5.9
+langchain-core==1.6.11
+ipykernel
+langchain-groq==1.1.3
