@@ -1,0 +1,5 @@
+psycopg[binary]>=3.2,<4
+qdrant-client>=1.12,<2
+neo4j>=5.26,<7
+sentence-transformers>=3,<6
+pytest>=8,<10
