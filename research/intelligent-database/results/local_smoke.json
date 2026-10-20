@@ -1,0 +1,57 @@
+{
+  "results": [
+    {
+      "method": "word_tfidf_logistic",
+      "n": 6,
+      "accuracy": 0.833333,
+      "macro_f1": 0.822222
+    },
+    {
+      "method": "char_tfidf_logistic",
+      "n": 6,
+      "accuracy": 0.833333,
+      "macro_f1": 0.822222
+    },
+    {
+      "method": "hybrid_mean_probabilities",
+      "n": 6,
+      "accuracy": 0.833333,
+      "macro_f1": 0.822222
+    },
+    {
+      "method": "validation_gated_router",
+      "n": 6,
+      "accuracy": 0.833333,
+      "macro_f1": 0.822222
+    }
+  ],
+  "paired_gain": 0.0,
+  "bootstrap_95_ci": [
+    0.0,
+    0.0
+  ],
+  "validation_gate_thresholds": {
+    "word": 0.0,
+    "char": 0.0
+  },
+  "selective": {
+    "threshold": 0.44,
+    "coverage": 0.6666666666666666,
+    "accuracy_accepted": 1.0,
+    "n_accepted": 4,
+    "n_total": 6
+  },
+  "labels": 3,
+  "data": {
+    "train": 12,
+    "validation": 6,
+    "test": 6
+  },
+  "caveats": [
+    "Classification benchmark, not end-to-end SQL/vector/graph query execution.",
+    "TF-IDF character features are not dense neural embeddings.",
+    "Abstention confidence is not calibrated and may fail under distribution shift.",
+    "No public benchmark establishes novelty of this approach."
+  ],
+  "mode": "SMOKE_TEST_3_INTENTS_NOT_PUBLISHABLE"
+}
