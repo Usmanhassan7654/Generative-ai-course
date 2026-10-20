@@ -1,0 +1,24 @@
+name: Reproduce Banking77 benchmark
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'research/intelligent-database/**'
+jobs:
+  benchmark:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: research/intelligent-database
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install -r requirements.txt
+      - run: python benchmark.py --demo --out results/smoke.json
+      - run: python benchmark.py --out results/banking77.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: reproducible-banking77-results
+          path: research/intelligent-database/results/*.json
