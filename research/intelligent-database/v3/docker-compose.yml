@@ -1,0 +1,17 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: pacedb
+      POSTGRES_USER: pace
+      POSTGRES_PASSWORD: devonly_change_me
+    ports: ["5432:5432"]
+    volumes: ["./sql:/docker-entrypoint-initdb.d:ro"]
+  qdrant:
+    image: qdrant/qdrant:v1.12.6
+    ports: ["6333:6333"]
+  neo4j:
+    image: neo4j:5.26-community
+    environment:
+      NEO4J_AUTH: neo4j/devpassword123
+    ports: ["7474:7474", "7687:7687"]
