@@ -40,3 +40,9 @@ This work provides an auditable prototype and a cautious specification for evalu
 [4] X. Yang et al., “CRAG — Comprehensive RAG Benchmark,” 2024, https://arxiv.org/abs/2406.04744.
 
 [5] I. Casanueva et al., “Efficient Intent Detection with Dual Sentence Encoders,” Proceedings of the 2nd Workshop on NLP for Conversational AI, 2020, https://arxiv.org/abs/2003.04807.
+
+## Additional exploratory multi-store experiment (October 2026)
+
+We implemented a second, *synthetic*, end-to-end demonstration (`multistore.py`) containing 12 invented banking-support documents, 12 manually authored test queries, row-level tenant isolation, document freshness thresholds, explicit relationship edges, hybrid sparse-retrieval scoring, and a SQLite evidence log. In the authored tests, a policy-aware lexical/TF-IDF hybrid retrieved 11/12 desired records; adding graph-constrained routing retrieved 12/12. The ablation removing graph constraints also retrieved 11/12. Unrestricted baselines were weaker but inherently unfair comparators because they omitted mandatory authorization. The 1/12 gain is descriptive only, not a statistically established improvement. Experiments were not performed on real bank customer data and the graph is stored in SQLite rather than an independent graph database. These results MUST NOT be used as the central empirical claim of a conference manuscript.
+
+Proposed falsifiable claim for future work: across multiple held-out domains and realistic permission/freshness changes, evidence-aware multi-store routing improves answer support and access-control compliance at a controlled p95 latency and dollar cost relative to **policy-equivalent** hybrid search, a metadata-filtered vector baseline, and independently implemented adaptive-RAG baselines. This is a planned experiment, not a current finding.
