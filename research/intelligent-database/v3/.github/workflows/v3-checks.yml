@@ -1,0 +1,17 @@
+name: PACE V3 local policy checks
+on:
+  push:
+    paths:
+      - 'research/intelligent-database/v3/**'
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run policy tests
+        working-directory: research/intelligent-database/v3
+        run: python -m unittest discover -s tests -v
