@@ -1,0 +1,606 @@
+{
+  "digits": {
+    "metadata": {
+      "dataset": "sklearn load_digits",
+      "real_images": true,
+      "n": 1797,
+      "image_size": "8x8 grayscale pixels",
+      "target": "handwritten digit label"
+    },
+    "seed": 20261021,
+    "split": {
+      "train": 1010,
+      "validation": 337,
+      "test": 450,
+      "stratified": true
+    },
+    "calibration": {
+      "t_fast": 0.72,
+      "t_full": 0.57,
+      "validation_accuracy": 0.9851632047477745,
+      "validation_strong_accuracy": 0.9881305637982196,
+      "validation_proxy_cost": 1.4391691394658754,
+      "selection_objective": "minimum proxy cost while accuracy within 1pp of strong baseline on validation"
+    },
+    "metrics": {
+      "fast_only": {
+        "accuracy": 0.9533333333333334,
+        "correct": 429,
+        "n": 450,
+        "cost_proxy": 1.0
+      },
+      "full_only": {
+        "accuracy": 0.9866666666666667,
+        "correct": 444,
+        "n": 450,
+        "cost_proxy": 3.0
+      },
+      "strong_only": {
+        "accuracy": 0.9888888888888889,
+        "correct": 445,
+        "n": 450,
+        "cost_proxy": 8.0
+      },
+      "loop": {
+        "accuracy": 0.9844444444444445,
+        "correct": 443,
+        "n": 450,
+        "cost_proxy": 1.448888888888889
+      },
+      "single_route": {
+        "accuracy": 0.9844444444444445,
+        "correct": 443,
+        "n": 450,
+        "cost_proxy": 1.2755555555555556
+      }
+    },
+    "paired": {
+      "fast_only": {
+        "loop_wins": 14,
+        "loop_losses": 0
+      },
+      "full_only": {
+        "loop_wins": 1,
+        "loop_losses": 2
+      },
+      "strong_only": {
+        "loop_wins": 3,
+        "loop_losses": 5
+      },
+      "single_route": {
+        "loop_wins": 0,
+        "loop_losses": 0
+      }
+    },
+    "route_counts": {
+      "fast": 388,
+      "full": 60,
+      "strong": 2
+    },
+    "traces": [
+      {
+        "sample_index": 1683,
+        "image_sha256": "cb67f8b156a214a99a6262d3ca413963d507c844836a109aecfd516ca863f266",
+        "selected_route": "fast",
+        "attempts": [
+          {
+            "store": "pca_knn",
+            "confidence": 1.0,
+            "accepted": true
+          }
+        ],
+        "predicted": 6,
+        "correct": true
+      },
+      {
+        "sample_index": 1099,
+        "image_sha256": "57ecfef7cd1813914ffe957accc00505af05e911e0b53ca7ebe7d3bfa757401c",
+        "selected_route": "fast",
+        "attempts": [
+          {
+            "store": "pca_knn",
+            "confidence": 1.0,
+            "accepted": true
+          }
+        ],
+        "predicted": 0,
+        "correct": true
+      },
+      {
+        "sample_index": 1530,
+        "image_sha256": "fc6c9ce919194d06bc74dc87581e1ec2a747e337484598ca0c4c3ff6ecc055e9",
+        "selected_route": "fast",
+        "attempts": [
+          {
+            "store": "pca_knn",
+            "confidence": 1.0,
+            "accepted": true
+          }
+        ],
+        "predicted": 2,
+        "correct": true
+      },
+      {
+        "sample_index": 623,
+        "image_sha256": "b82866a197046e23c36c5b2bde3d378e7f498bca8677412693a2deb83f352cf5",
+        "selected_route": "fast",
+        "attempts": [
+          {
+            "store": "pca_knn",
+            "confidence": 0.8571428571428571,
+            "accepted": true
+          }
+        ],
+        "predicted": 1,
+        "correct": true
+      },
+      {
+        "sample_index": 228,
+        "image_sha256": "64e6a076a54542a01c3f78f61b0eb283e07f0792a996bfec7c77c2f9040db372",
+        "selected_route": "fast",
+        "attempts": [
+          {
+            "store": "pca_knn",
+            "confidence": 1.0,
+            "accepted": true
+          }
+        ],
+        "predicted": 4,
+        "correct": true
+      },
+      {
+        "sample_index": 998,
+        "image_sha256": "4d675c1d9924f49a680e98c20330a6e7476abf8e57f6317e8e27bfed154cc0fc",
+        "selected_route": "fast",
+        "attempts": [
+          {
+            "store": "pca_knn",
+            "confidence": 1.0,
+            "accepted": true
+          }
+        ],
+        "predicted": 4,
+        "correct": true
+      },
+      {
+        "sample_index": 1460,
+        "image_sha256": "86f03523805374c0aa7070662f318178f4f390e818e68a561e0a7226fd947d74",
+        "selected_route": "fast",
+        "attempts": [
+          {
+            "store": "pca_knn",
+            "confidence": 1.0,
+            "accepted": true
+          }
+        ],
+        "predicted": 3,
+        "correct": true
+      },
+      {
+        "sample_index": 618,
+        "image_sha256": "90a5bda8013aaacf9e8b61405d264b0684b903ca63c3443f9f4636c814b71211",
+        "selected_route": "fast",
+        "attempts": [
+          {
+            "store": "pca_knn",
+            "confidence": 1.0,
+            "accepted": true
+          }
+        ],
+        "predicted": 5,
+        "correct": true
+      },
+      {
+        "sample_index": 1501,
+        "image_sha256": "c17fb26cdfd92afbabf781447b4de6dbc2c7254a591d2a395cbd1d60b67f148a",
+        "selected_route": "fast",
+        "attempts": [
+          {
+            "store": "pca_knn",
+            "confidence": 1.0,
+            "accepted": true
+          }
+        ],
+        "predicted": 7,
+        "correct": true
+      },
+      {
+        "sample_index": 365,
+        "image_sha256": "32d4f83c330f9f61831ac63189426f1c5584ddd0d934ac08808107db509e19e4",
+        "selected_route": "fast",
+        "attempts": [
+          {
+            "store": "pca_knn",
+            "confidence": 1.0,
+            "accepted": true
+          }
+        ],
+        "predicted": 5,
+        "correct": true
+      },
+      {
+        "sample_index": 245,
+        "image_sha256": "abe19bb5b5df61bcf9041a1bdfc453a5ce1409303ddbbd567a20a005297f8efb",
+        "selected_route": "fast",
+        "attempts": [
+          {
+            "store": "pca_knn",
+            "confidence": 1.0,
+            "accepted": true
+          }
+        ],
+        "predicted": 5,
+        "correct": true
+      },
+      {
+        "sample_index": 583,
+        "image_sha256": "0804c3c315076ea1dbb9cace8c342ce1c81eb2d1385c9a7949635720d5197b6e",
+        "selected_route": "fast",
+        "attempts": [
+          {
+            "store": "pca_knn",
+            "confidence": 1.0,
+            "accepted": true
+          }
+        ],
+        "predicted": 6,
+        "correct": true
+      },
+      {
+        "sample_index": 627,
+        "image_sha256": "251d4ceab7569820106dd3aa5c6fd8f4d25223c9d8dc6b714d7006b7eed6b7cd",
+        "selected_route": "fast",
+        "attempts": [
+          {
+            "store": "pca_knn",
+            "confidence": 1.0,
+            "accepted": true
+          }
+        ],
+        "predicted": 4,
+        "correct": true
+      },
+      {
+        "sample_index": 745,
+        "image_sha256": "bdbd60884732a3ed7abe5a34b738371c3f37a9e2945b6156cb66594a662cd64d",
+        "selected_route": "fast",
+        "attempts": [
+          {
+            "store": "pca_knn",
+            "confidence": 1.0,
+            "accepted": true
+          }
+        ],
+        "predicted": 1,
+        "correct": true
+      },
+      {
+        "sample_index": 1417,
+        "image_sha256": "532560f8991df7d94b1bc384adb9436ccca33ff7f291dea7cfabc40a4d63b7bb",
+        "selected_route": "fast",
+        "attempts": [
+          {
+            "store": "pca_knn",
+            "confidence": 1.0,
+            "accepted": true
+          }
+        ],
+        "predicted": 2,
+        "correct": true
+      }
+    ],
+    "limitations": [
+      "Image classification is a PROXY for image-store routing, not SQL/vector/graph query selection",
+      "RBF SVC is a classifier, not an independent image database",
+      "Verifier uses classifier posterior confidence, not factual grounding or image-content authentication",
+      "All three models train on the same data; routes correspond to feature/index computation",
+      "Proxy cost units are hand-assigned, not measured latency or cloud cost",
+      "Dataset digits images are 8x8 grayscale and iris has no images",
+      "Confidence threshold calibrated on validation, no true prediction correctness visible to loop",
+      "Dataset was available locally; public multimodal VQA datasets not run",
+      "Single source catalog, no authorization policy in this stage"
+    ]
+  },
+  "iris": {
+    "metadata": {
+      "dataset": "sklearn load_iris",
+      "real_images": false,
+      "n": 150,
+      "target": "species",
+      "image_size": "no images; independent structured-data domain"
+    },
+    "seed": 20261021,
+    "split": {
+      "train": 84,
+      "validation": 28,
+      "test": 38,
+      "stratified": true
+    },
+    "calibration": {
+      "t_fast": 0.57,
+      "t_full": 0.57,
+      "validation_accuracy": 0.9642857142857143,
+      "validation_strong_accuracy": 0.9642857142857143,
+      "validation_proxy_cost": 1.0,
+      "selection_objective": "minimum proxy cost while accuracy within 1pp of strong baseline on validation"
+    },
+    "metrics": {
+      "fast_only": {
+        "accuracy": 0.9210526315789473,
+        "correct": 35,
+        "n": 38,
+        "cost_proxy": 1.0
+      },
+      "full_only": {
+        "accuracy": 0.9736842105263158,
+        "correct": 37,
+        "n": 38,
+        "cost_proxy": 3.0
+      },
+      "strong_only": {
+        "accuracy": 0.9473684210526315,
+        "correct": 36,
+        "n": 38,
+        "cost_proxy": 8.0
+      },
+      "loop": {
+        "accuracy": 0.9210526315789473,
+        "correct": 35,
+        "n": 38,
+        "cost_proxy": 1.0
+      },
+      "single_route": {
+        "accuracy": 0.9210526315789473,
+        "correct": 35,
+        "n": 38,
+        "cost_proxy": 1.0
+      }
+    },
+    "paired": {
+      "fast_only": {
+        "loop_wins": 0,
+        "loop_losses": 0
+      },
+      "full_only": {
+        "loop_wins": 0,
+        "loop_losses": 2
+      },
+      "strong_only": {
+        "loop_wins": 0,
+        "loop_losses": 1
+      },
+      "single_route": {
+        "loop_wins": 0,
+        "loop_losses": 0
+      }
+    },
+    "route_counts": {
+      "fast": 38,
+      "full": 0,
+      "strong": 0
+    },
+    "traces": [
+      {
+        "sample_index": 134,
+        "image_sha256": "6c21885837c6c6757d6d6474ab9cd586483887fe16c5ebcdb521bb3655ee873a",
+        "selected_route": "fast",
+        "attempts": [
+          {
+            "store": "pca_knn",
+            "confidence": 1.0,
+            "accepted": true
+          }
+        ],
+        "predicted": 2,
+        "correct": true
+      },
+      {
+        "sample_index": 38,
+        "image_sha256": "9d99a18c49fbe1e724d490017d89a49dcc0cdbf2f21fff0954a660526622d775",
+        "selected_route": "fast",
+        "attempts": [
+          {
+            "store": "pca_knn",
+            "confidence": 1.0,
+            "accepted": true
+          }
+        ],
+        "predicted": 0,
+        "correct": true
+      },
+      {
+        "sample_index": 8,
+        "image_sha256": "15d7f429ba8560efe794cfd623a08f6acb173dc7cf1abb01561814048a7eafd3",
+        "selected_route": "fast",
+        "attempts": [
+          {
+            "store": "pca_knn",
+            "confidence": 1.0,
+            "accepted": true
+          }
+        ],
+        "predicted": 0,
+        "correct": true
+      },
+      {
+        "sample_index": 116,
+        "image_sha256": "bddc93400f96255229101f71d61e96bbe838bb29d3a49b2759ddbcf606b27c66",
+        "selected_route": "fast",
+        "attempts": [
+          {
+            "store": "pca_knn",
+            "confidence": 1.0,
+            "accepted": true
+          }
+        ],
+        "predicted": 2,
+        "correct": true
+      },
+      {
+        "sample_index": 14,
+        "image_sha256": "47694a692376d25a01b8c616988d4a02704174e7d34490e2884bb93130f673c5",
+        "selected_route": "fast",
+        "attempts": [
+          {
+            "store": "pca_knn",
+            "confidence": 1.0,
+            "accepted": true
+          }
+        ],
+        "predicted": 0,
+        "correct": true
+      },
+      {
+        "sample_index": 105,
+        "image_sha256": "74581971f4c12e0bc4a8bd84825d7255c3433cfdc255211cb9296a4ef84ff4e7",
+        "selected_route": "fast",
+        "attempts": [
+          {
+            "store": "pca_knn",
+            "confidence": 1.0,
+            "accepted": true
+          }
+        ],
+        "predicted": 2,
+        "correct": true
+      },
+      {
+        "sample_index": 45,
+        "image_sha256": "7c7098bb50cfc45414be70183e951bdf491b6fad22502232f884ee6b0d9e8434",
+        "selected_route": "fast",
+        "attempts": [
+          {
+            "store": "pca_knn",
+            "confidence": 1.0,
+            "accepted": true
+          }
+        ],
+        "predicted": 0,
+        "correct": true
+      },
+      {
+        "sample_index": 108,
+        "image_sha256": "0fd95d4b8e81c1b447ff553a540588d85f9267d0bc23af3dace7737a22cdde1d",
+        "selected_route": "fast",
+        "attempts": [
+          {
+            "store": "pca_knn",
+            "confidence": 1.0,
+            "accepted": true
+          }
+        ],
+        "predicted": 2,
+        "correct": true
+      },
+      {
+        "sample_index": 15,
+        "image_sha256": "1204f37d318f19fa409d73fdbc288fa70eff55ae237c342f226a529e0b73b5fe",
+        "selected_route": "fast",
+        "attempts": [
+          {
+            "store": "pca_knn",
+            "confidence": 1.0,
+            "accepted": true
+          }
+        ],
+        "predicted": 0,
+        "correct": true
+      },
+      {
+        "sample_index": 9,
+        "image_sha256": "be5bf2df29a03885451c8095cb29323c78b891cae1e1e61cd10cfc649ae16cbe",
+        "selected_route": "fast",
+        "attempts": [
+          {
+            "store": "pca_knn",
+            "confidence": 1.0,
+            "accepted": true
+          }
+        ],
+        "predicted": 0,
+        "correct": true
+      },
+      {
+        "sample_index": 61,
+        "image_sha256": "d22e6404a00df261a82404ba8f832cccc9e8305047f041b57c9a33153192ba57",
+        "selected_route": "fast",
+        "attempts": [
+          {
+            "store": "pca_knn",
+            "confidence": 1.0,
+            "accepted": true
+          }
+        ],
+        "predicted": 1,
+        "correct": true
+      },
+      {
+        "sample_index": 78,
+        "image_sha256": "721fd6288c6523e47fd9f628b10c66a2da74711cdac51aef9f23e88e384f8339",
+        "selected_route": "fast",
+        "attempts": [
+          {
+            "store": "pca_knn",
+            "confidence": 1.0,
+            "accepted": true
+          }
+        ],
+        "predicted": 1,
+        "correct": true
+      },
+      {
+        "sample_index": 121,
+        "image_sha256": "01927a7db61a343061189d8c2650fe8c256e074ec0910d72154f6385785d75c8",
+        "selected_route": "fast",
+        "attempts": [
+          {
+            "store": "pca_knn",
+            "confidence": 1.0,
+            "accepted": true
+          }
+        ],
+        "predicted": 2,
+        "correct": true
+      },
+      {
+        "sample_index": 63,
+        "image_sha256": "ab3c7d62248af28a63598474dfb182b4c5506b413a27701d4850e7b5bbb143d6",
+        "selected_route": "fast",
+        "attempts": [
+          {
+            "store": "pca_knn",
+            "confidence": 0.7142857142857143,
+            "accepted": true
+          }
+        ],
+        "predicted": 1,
+        "correct": true
+      },
+      {
+        "sample_index": 68,
+        "image_sha256": "9645dbf3c026e85b4ea542b475fbceef47544d0ce23d0b3743e27a7766e68466",
+        "selected_route": "fast",
+        "attempts": [
+          {
+            "store": "pca_knn",
+            "confidence": 0.5714285714285714,
+            "accepted": true
+          }
+        ],
+        "predicted": 2,
+        "correct": false
+      }
+    ],
+    "limitations": [
+      "Image classification is a PROXY for image-store routing, not SQL/vector/graph query selection",
+      "RBF SVC is a classifier, not an independent image database",
+      "Verifier uses classifier posterior confidence, not factual grounding or image-content authentication",
+      "All three models train on the same data; routes correspond to feature/index computation",
+      "Proxy cost units are hand-assigned, not measured latency or cloud cost",
+      "Dataset digits images are 8x8 grayscale and iris has no images",
+      "Confidence threshold calibrated on validation, no true prediction correctness visible to loop",
+      "Dataset was available locally; public multimodal VQA datasets not run",
+      "Single source catalog, no authorization policy in this stage"
+    ]
+  }
+}
