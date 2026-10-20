@@ -1,0 +1,41 @@
+{
+  "evidence": [
+    {
+      "id": "a",
+      "text": "The card was dispatched to the delivery service",
+      "tenant": "A",
+      "classification": 0,
+      "observed_at": 1792525864,
+      "source": "record",
+      "parent": "card",
+      "provenance": "demo/a",
+      "sha256": "0c07765a9794b175e54928fa72d721a95db0bc25ab3153d262920974d194928c"
+    },
+    {
+      "id": "b",
+      "text": "The shipping provider tracking information is available",
+      "tenant": "A",
+      "classification": 0,
+      "observed_at": 1792525864,
+      "source": "document",
+      "parent": "card",
+      "provenance": "demo/b",
+      "sha256": "7a4aa76efae45c3e476cbf022b2462dfbfac7599d0f69dad2f1d0da39140dc82"
+    }
+  ],
+  "audit": {
+    "query_sha256": "f032b27a9c40c95b73b8278fa0bafd6360c5e57b84d9e67425cb38e8a80c4a66",
+    "tenant": "A",
+    "candidate_count": 1,
+    "allowed_count": 2,
+    "returned_ids": [
+      "a",
+      "b"
+    ],
+    "abstained": false,
+    "policy_checked": true,
+    "mode": "pace",
+    "elapsed_ms": 0.1593
+  },
+  "answer": "Evidence retrieved; generation not implemented"
+}
