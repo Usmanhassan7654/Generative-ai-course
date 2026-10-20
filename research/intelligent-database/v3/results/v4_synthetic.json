@@ -1,0 +1,328 @@
+{
+  "experiment": "PACE V4 learned routing",
+  "data": "Synthetic scenario corpus, 10 entities, 180 generated questions, template-held-out test=60",
+  "train_n": 120,
+  "test_n": 60,
+  "train_route_labels": {
+    "exact": 40,
+    "graph": 40,
+    "semantic": 40
+  },
+  "metrics": {
+    "exact": {
+      "n": 60,
+      "all_required_evidence_recall": 0.3333333333333333,
+      "mean_cost_units": 1.0,
+      "median_ms": 0.016372499999999998,
+      "p95_ms": 0.055954,
+      "route_counts": {
+        "exact": 60,
+        "semantic": 0,
+        "graph": 0
+      },
+      "by_query_family": {
+        "exact": 1.0,
+        "semantic": 0.0,
+        "graph": 0.0
+      }
+    },
+    "semantic": {
+      "n": 60,
+      "all_required_evidence_recall": 0.36666666666666664,
+      "mean_cost_units": 2.0,
+      "median_ms": 0.7812985,
+      "p95_ms": 1.227726,
+      "route_counts": {
+        "exact": 0,
+        "semantic": 60,
+        "graph": 0
+      },
+      "by_query_family": {
+        "exact": 0.1,
+        "semantic": 1.0,
+        "graph": 0.0
+      }
+    },
+    "graph": {
+      "n": 60,
+      "all_required_evidence_recall": 1.0,
+      "mean_cost_units": 3.5,
+      "median_ms": 0.74448,
+      "p95_ms": 1.206685,
+      "route_counts": {
+        "exact": 0,
+        "semantic": 0,
+        "graph": 60
+      },
+      "by_query_family": {
+        "exact": 1.0,
+        "semantic": 1.0,
+        "graph": 1.0
+      }
+    },
+    "adaptive": {
+      "n": 60,
+      "all_required_evidence_recall": 0.9166666666666666,
+      "mean_cost_units": 2.2916666666666665,
+      "median_ms": 1.1346015,
+      "p95_ms": 1.757671,
+      "route_counts": {
+        "exact": 20,
+        "semantic": 15,
+        "graph": 25
+      },
+      "by_query_family": {
+        "exact": 1.0,
+        "semantic": 1.0,
+        "graph": 0.75
+      }
+    }
+  },
+  "failures": {
+    "exact": [
+      {
+        "query": "explain report audit procedure",
+        "family": "semantic",
+        "selected": "exact",
+        "gold": [
+          "r-JX110"
+        ],
+        "predicted": [],
+        "success": false,
+        "cost_units": 1.0,
+        "latency_ms": 0.014279
+      },
+      {
+        "query": "explain invoice payment procedure",
+        "family": "semantic",
+        "selected": "exact",
+        "gold": [
+          "r-CX300"
+        ],
+        "predicted": [],
+        "success": false,
+        "cost_units": 1.0,
+        "latency_ms": 0.055954
+      },
+      {
+        "query": "what driver is connected to parcel dispatch",
+        "family": "graph",
+        "selected": "exact",
+        "gold": [
+          "r-AX100",
+          "l-AX100"
+        ],
+        "predicted": [],
+        "success": false,
+        "cost_units": 1.0,
+        "latency_ms": 0.017775
+      },
+      {
+        "query": "find the linked auditor for report audit",
+        "family": "graph",
+        "selected": "exact",
+        "gold": [
+          "r-JX110",
+          "l-JX110"
+        ],
+        "predicted": [],
+        "success": false,
+        "cost_units": 1.0,
+        "latency_ms": 0.014999
+      },
+      {
+        "query": "what support is connected to product return",
+        "family": "graph",
+        "selected": "exact",
+        "gold": [
+          "r-EX500",
+          "l-EX500"
+        ],
+        "predicted": [],
+        "success": false,
+        "cost_units": 1.0,
+        "latency_ms": 0.01882
+      }
+    ],
+    "semantic": [
+      {
+        "query": "get the entry EX500",
+        "family": "exact",
+        "selected": "semantic",
+        "gold": [
+          "r-EX500"
+        ],
+        "predicted": [
+          "l-EX500",
+          "l-GX700",
+          "l-AX100"
+        ],
+        "success": false,
+        "cost_units": 2.0,
+        "latency_ms": 1.227726
+      },
+      {
+        "query": "get the entry FX600",
+        "family": "exact",
+        "selected": "semantic",
+        "gold": [
+          "r-FX600"
+        ],
+        "predicted": [
+          "l-FX600",
+          "l-GX700",
+          "l-EX500"
+        ],
+        "success": false,
+        "cost_units": 2.0,
+        "latency_ms": 0.796085
+      },
+      {
+        "query": "what driver is connected to parcel dispatch",
+        "family": "graph",
+        "selected": "semantic",
+        "gold": [
+          "r-AX100",
+          "l-AX100"
+        ],
+        "predicted": [
+          "r-AX100",
+          "p-AX100",
+          "r-BX200"
+        ],
+        "success": false,
+        "cost_units": 2.0,
+        "latency_ms": 0.797615
+      },
+      {
+        "query": "get the entry AX100",
+        "family": "exact",
+        "selected": "semantic",
+        "gold": [
+          "r-AX100"
+        ],
+        "predicted": [
+          "l-AX100",
+          "l-GX700",
+          "l-JX110"
+        ],
+        "success": false,
+        "cost_units": 2.0,
+        "latency_ms": 0.8421
+      },
+      {
+        "query": "get the entry JX110",
+        "family": "exact",
+        "selected": "semantic",
+        "gold": [
+          "r-JX110"
+        ],
+        "predicted": [
+          "l-JX110",
+          "l-AX100",
+          "l-GX700"
+        ],
+        "success": false,
+        "cost_units": 2.0,
+        "latency_ms": 0.727731
+      }
+    ],
+    "graph": [],
+    "adaptive": [
+      {
+        "query": "what driver is connected to parcel dispatch",
+        "family": "graph",
+        "selected": "semantic",
+        "gold": [
+          "r-AX100",
+          "l-AX100"
+        ],
+        "predicted": [
+          "r-AX100",
+          "p-AX100",
+          "r-BX200"
+        ],
+        "success": false,
+        "cost_units": 2.0,
+        "latency_ms": 1.643135
+      },
+      {
+        "query": "what support is connected to product return",
+        "family": "graph",
+        "selected": "semantic",
+        "gold": [
+          "r-EX500",
+          "l-EX500"
+        ],
+        "predicted": [
+          "r-EX500",
+          "p-EX500",
+          "p-JX110"
+        ],
+        "success": false,
+        "cost_units": 2.0,
+        "latency_ms": 1.535288
+      },
+      {
+        "query": "what finance is connected to invoice payment",
+        "family": "graph",
+        "selected": "semantic",
+        "gold": [
+          "r-CX300",
+          "l-CX300"
+        ],
+        "predicted": [
+          "r-CX300",
+          "p-CX300",
+          "r-DX400"
+        ],
+        "success": false,
+        "cost_units": 2.0,
+        "latency_ms": 1.20009
+      },
+      {
+        "query": "what auditor is connected to report audit",
+        "family": "graph",
+        "selected": "semantic",
+        "gold": [
+          "r-JX110",
+          "l-JX110"
+        ],
+        "predicted": [
+          "r-JX110",
+          "p-JX110",
+          "r-AX100"
+        ],
+        "success": false,
+        "cost_units": 2.0,
+        "latency_ms": 1.497969
+      },
+      {
+        "query": "what agent is connected to shipment customs",
+        "family": "graph",
+        "selected": "semantic",
+        "gold": [
+          "r-HX800",
+          "l-HX800"
+        ],
+        "predicted": [
+          "r-HX800",
+          "p-HX800",
+          "l-CX300"
+        ],
+        "success": false,
+        "cost_units": 2.0,
+        "latency_ms": 1.208003
+      }
+    ]
+  },
+  "limitations": [
+    "Synthetic, template-generated queries; not independent human-labeled evaluation",
+    "Scores are retrieval-only, not answer correctness",
+    "Vector-style route is sparse character TF-IDF, not dense neural embeddings",
+    "Graph is in-process adjacency, exact route is an in-memory key lookup, not deployed database queries",
+    "Unit cost values are declared proxies, not monetary infrastructure cost",
+    "Single deterministic data split; no uncertainty intervals",
+    "Same source corpus for all methods; same tenant and freshness guard"
+  ]
+}
