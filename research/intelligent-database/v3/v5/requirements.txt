@@ -1,0 +1,4 @@
+numpy>=1.25,<3.0
+scikit-learn>=1.4,<2.0
+scikit-image>=0.22,<1.0
+Pillow>=10,<13
