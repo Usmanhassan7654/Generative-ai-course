@@ -1,0 +1,55 @@
+{
+  "setup": {
+    "records": 240,
+    "queries": 240,
+    "seed": 41,
+    "data": "synthetic",
+    "real_external_databases": false
+  },
+  "methods": {
+    "sql_only": {
+      "correct": 200,
+      "answered": 200,
+      "abstained": 40,
+      "unauthorized_answers": 0,
+      "selective_accuracy": 1.0,
+      "end_to_end_success": 0.8333,
+      "coverage": 0.8333,
+      "mean_modeled_cost": 1.0,
+      "abstention_causes": {
+        "no_authorized_current_record": 40
+      }
+    },
+    "one_shot": {
+      "correct": 124,
+      "answered": 179,
+      "abstained": 61,
+      "unauthorized_answers": 0,
+      "selective_accuracy": 0.6927,
+      "end_to_end_success": 0.5167,
+      "coverage": 0.7458,
+      "mean_modeled_cost": 2.667,
+      "abstention_causes": {
+        "no_authorized_current_record": 40,
+        "unknown": 21
+      }
+    },
+    "verified": {
+      "correct": 146,
+      "answered": 146,
+      "abstained": 94,
+      "unauthorized_answers": 0,
+      "selective_accuracy": 1.0,
+      "end_to_end_success": 0.6083,
+      "coverage": 0.6083,
+      "mean_modeled_cost": 3.0,
+      "abstention_causes": {
+        "no_authorized_current_record": 40,
+        "sql_document_disagreement": 29,
+        "missing_independent_document": 21,
+        "sql_graph_disagreement": 4
+      }
+    }
+  },
+  "failures": {}
+}
