@@ -1,0 +1,8 @@
+# Python 3.11 or 3.12 recommended. Only packages used in this lesson.
+langchain-community>=0.4,<0.5
+langchain-google-genai>=4,<5
+langchain-groq>=1,<2
+python-dotenv>=1,<2
+pypdf>=6,<7
+beautifulsoup4>=4.12,<5
+wikipedia>=1.4,<2
