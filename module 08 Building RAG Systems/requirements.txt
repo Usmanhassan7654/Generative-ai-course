@@ -1,0 +1,17 @@
+# Python 3.11 or 3.12
+langchain-core>=0.3.70,<2
+langchain-community>=0.3.27,<1
+langchain-text-splitters>=0.3.9,<2
+langchain-chroma>=0.2.5,<2
+langchain-huggingface>=0.3.0,<2
+langchain-google-genai>=2.1.9,<5
+langchain-groq>=0.3.6,<2
+sentence-transformers>=3.4,<6
+chromadb>=1.0,<2
+streamlit>=1.45,<2
+python-dotenv>=1.0,<2
+pypdf>=5,<8
+beautifulsoup4>=4.12,<5
+
+notebook>=7,<8
+ipykernel>=6,<8

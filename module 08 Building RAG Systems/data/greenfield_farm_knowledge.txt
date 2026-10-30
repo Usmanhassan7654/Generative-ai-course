@@ -1,0 +1,26 @@
+GREENFIELD DAIRY — FICTIONAL CLASSROOM KNOWLEDGE BASE
+Version: 2026-10-01. This is teaching data, not professional veterinary guidance.
+
+SECTION 1 — COMPANY OVERVIEW
+Greenfield Dairy is a fictional training farm in Multan, Pakistan. It supplies fresh milk to three neighborhood retail partners. The farm operates daily from 6:00 AM to 8:00 PM. Office telephone: 061-555-0188 (fictional; do not call). Support email: help@greenfield.example (fictional; do not send messages).
+
+SECTION 2 — MILK COLLECTION
+Milk is collected twice per day: at 5:30 AM and at 5:30 PM. Each batch is assigned a batch number and checked for temperature. The cold storage target is 4 degrees Celsius or below. The farm records collection time, batch identifier, volume, and storage temperature for its internal records.
+
+SECTION 3 — FEEDING AND WATER
+The demonstration feeding schedule is 6:30 AM and 4:30 PM. Clean drinking water is available continuously. Farm workers record changes in feed consumption and report unusual patterns to a supervisor. Specific diets must be set by a qualified veterinarian or nutrition professional, not inferred from this classroom document.
+
+SECTION 4 — STAFF AND SHIFTS
+Morning shift: 5:00 AM to 1:00 PM. Evening shift: 1:00 PM to 9:00 PM. Every employee reports attendance to their shift supervisor. A shift handover log records outstanding work, hygiene observations, and equipment issues.
+
+SECTION 5 — ORDERING AND DELIVERY
+Retail partners submit the next day's order by 7:00 PM. Deliveries take place from 7:00 AM to 10:00 AM the following morning. Minimum retail partner order is 20 liters. Delivery is available only within the fictional training area of Multan. Same-day orders are not supported in this case study.
+
+SECTION 6 — CUSTOMER COMPLAINTS
+Customers should include the batch number and collection date when raising a quality complaint. The support team acknowledges complaints within 1 business day. An internal quality review starts after the complaint is logged. This document does not specify a refund policy or compensation amount.
+
+SECTION 7 — HYGIENE CHECKLIST
+Staff follow a written cleaning checklist before and after milking. Equipment cleaning is logged after every session. Supervisors review completion records each day. The document does not state any legal certification or external compliance approval.
+
+SECTION 8 — CLASSROOM KNOWLEDGE LIMITS
+Greenfield Dairy has not published its annual revenue, employee salaries, profit margin, legal ownership, or refund policy in this knowledge base. If a question asks about any of these, the assistant should say it could not find that information rather than inventing an answer.
