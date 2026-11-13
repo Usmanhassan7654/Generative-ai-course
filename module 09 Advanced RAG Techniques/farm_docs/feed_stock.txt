@@ -1,0 +1,11 @@
+Marhaba Cattle & Dairy Farm - Feed Stock Register
+
+Wanda stock: 22 bags in the store room.
+
+Silage stock: enough for 18 days.
+
+Green fodder (barseem) is cut fresh every morning.
+
+Each milking cow gets 4 kg of wanda per day, split into two meals.
+
+Order new wanda when stock falls below 10 bags.
