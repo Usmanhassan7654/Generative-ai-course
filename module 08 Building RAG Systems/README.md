@@ -17,7 +17,7 @@
 
 ## Option A — VS Code (Python 3.11 or 3.12)
 
-1. Extract the ZIP, then **open the `Module_08_Teacher_Ready` folder** in VS Code.
+1. Open this folder (`module 08 Building RAG Systems`) in VS Code. If you received the class ZIP instead, extract it and open the `Module_08_Teacher_Ready` folder.
 2. Select a Python notebook kernel; in VS Code terminal run `python -m pip install -r requirements.txt`.
 3. Copy `.env.example` to `.env`, add either `GROQ_API_KEY` or `GOOGLE_API_KEY`, and set `LLM_PROVIDER`.
 4. Open **`vscode.ipynb`** and execute its cells sequentially.
@@ -26,7 +26,7 @@
 ## Option B — Google Colab
 
 1. Open a new notebook in Colab. **Upload `colab.ipynb` using File → Upload notebook**.
-2. Run its ZIP-upload cell and choose this entire **`Module_08_Teacher_Ready.zip`** archive; that includes the data, requirements, and app.
+2. Run its ZIP-upload cell and choose **`Module_08_Teacher_Ready.zip`**. The notebook expects that name. If you cloned this repository, make a copy of this folder, rename the copy `Module_08_Teacher_Ready`, and zip it. The ZIP must include the data, requirements and app.
 3. Run its install cell. Add `GROQ_API_KEY` or `GOOGLE_API_KEY` in Colab Secrets (key icon) and allow notebook access.
 4. Run the remaining cells in order. The last page introduces the Streamlit app; the app is intended to be run from VS Code or a terminal, not in Colab by default.
 
