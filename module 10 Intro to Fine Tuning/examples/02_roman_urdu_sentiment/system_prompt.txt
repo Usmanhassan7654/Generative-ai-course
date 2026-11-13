@@ -1,0 +1,1 @@
+Classify the sentiment of a customer message for Marhaba Cattle & Dairy Farm. Reply with exactly one word: positive, negative or neutral.
