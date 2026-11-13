@@ -58,6 +58,12 @@ cd "module 10 Intro to Fine Tuning"
 python make_dataset.py examples/01_farm_order_slips
 python validate_dataset.py examples/01_farm_order_slips              # RESULT: READY
 python validate_dataset.py examples/04_bad_dataset/bad_examples.jsonl # RESULT: NOT READY (on purpose)
+
+cd "../module 09 Advanced RAG Techniques"
+pip install -r requirements.txt   # downloads two small models (~110 MB) on first run
+python 01_reranking.py            # retrieval runs without an API key
+python 02_hybrid_search.py
+python 06_failure_modes.py        # shows a prompt-injection document being retrieved
 ```
 
 ## About the data
