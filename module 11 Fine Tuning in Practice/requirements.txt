@@ -1,0 +1,7 @@
+# for evaluate.py and cost_estimator.py: nothing extra needed
+# for api_baseline.py (Groq / Gemini free keys):
+groq
+google-genai
+python-dotenv
+# optional: exact token counts in cost_estimator.py
+transformers

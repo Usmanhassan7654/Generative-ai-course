@@ -1,0 +1,7 @@
+.env
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+*.zip
+my_lora_adapter/
+checkpoints/
