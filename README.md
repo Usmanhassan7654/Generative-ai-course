@@ -1,8 +1,8 @@
-# Generative AI Course: from LLM APIs to RAG and fine-tuning
+# Generative AI Course: from LLM APIs to RAG, fine-tuning and AI agents
 
 The classroom materials for the Generative AI course I teach at **Bano Qabil** in Karachi.
 Students go from their first LLM API call to tool-calling assistants, retrieval-augmented
-generation (RAG) and fine-tuning datasets. Each module comes with a slide deck and runnable
+generation (RAG), fine-tuning and AI agents. Each module comes with a slide deck and runnable
 code (a VS Code notebook or script, plus a Google Colab version). Most modules follow one
 running scenario: a parcel-support desk and a fictional dairy business. That way students see
 each new technique fix a limitation of the last one.
@@ -17,7 +17,8 @@ each new technique fix a limitation of the last one.
 | New to LLMs | Module 02, then 03 |
 | Comfortable with API calls and want to build an assistant | Module 04 and [`ai assistant/`](ai%20assistant/) |
 | Here for RAG | Modules 05 → 06 → 07 → 08 → 09 |
-| Here for fine-tuning | Module 10 (no GPU or API key needed) |
+| Here for fine-tuning | Module 10 (no GPU or API key needed), then 11 |
+| Here for AI agents | Module 12 (start with the opening demo notebook) |
 
 ## Modules
 
@@ -34,6 +35,8 @@ each new technique fix a limitation of the last one.
 | 08 | [Building RAG systems](module%2008%20Building%20RAG%20Systems/) | Chunk → embed → retrieve → answer, with retrieval checks and a Streamlit chatbot | VS Code, Colab | Groq or Google |
 | 09 | [Advanced RAG](module%2009%20Advanced%20RAG%20Techniques/) | Re-ranking, hybrid search, reciprocal rank fusion (RRF) by hand, query rewriting, failure modes | VS Code, Colab | Not needed for retrieval |
 | 10 | [Intro to fine-tuning](module%2010%20Intro%20to%20Fine%20Tuning/) | Turn a spreadsheet into train/val/test JSONL and validate it | VS Code, Colab | Not needed |
+| 11 | [Fine-tuning in practice](module%2011%20Fine%20Tuning%20in%20Practice/) | QLoRA fine-tune a small model on your dataset, compare it to the base model, estimate cost | Colab (free T4 GPU), VS Code | Optional (Groq or Gemini for comparison) |
+| 12 | [Intro to AI agents](module%2012%20Intro%20to%20AI%20Agents/) | An agent from scratch (ReAct loop + tools), then memory, LangChain `create_agent` and a LangGraph graph with human approval | VS Code, Colab | Groq or Gemini |
 
 ## Setup (VS Code)
 

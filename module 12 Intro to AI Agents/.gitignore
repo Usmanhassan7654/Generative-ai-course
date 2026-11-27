@@ -1,0 +1,8 @@
+# secret keys: never upload
+.env
+# the agent's diary created by the Day 2 notebook
+customer_notes.json
+# Python / Jupyter clutter
+__pycache__/
+.ipynb_checkpoints/
+.venv/

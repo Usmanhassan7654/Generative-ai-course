@@ -1,0 +1,14 @@
+# Module 12: Intro to AI Agents  (Designed by Engr Usman Hasan)
+# Day 1: agent from scratch (plain Python + an LLM)
+groq==1.7.0
+google-genai==3.6.1
+python-dotenv==1.2.4
+# Day 2: LangChain building blocks + LangGraph (the agent's map)
+langchain==1.5.2
+langgraph==1.2.24
+langchain-groq==1.2.1
+langchain-google-genai==4.5.3
+# the chat app with the "Agent thinking" box
+streamlit==1.67.0
+# run the notebooks in VS Code
+ipykernel
